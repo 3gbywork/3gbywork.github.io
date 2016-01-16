@@ -10,6 +10,6 @@
 * SSH协议： `git@github.com:3gbywork/3gbywork.github.io.git`
 * Git协议： `git://github.com/3gbywork/3gbywork.github.io.git`
 
-### 克隆版本库
+### 克隆版本库 src 分支
 
-`$ git clone git://github.com/3gbywork/3gbywork.github.io.git`
+`$ git clone -b src git://github.com/3gbywork/3gbywork.github.io.git`
