@@ -44,3 +44,27 @@ Start()|启动服务
 Pause()|挂起服务的操作
 Continue()|在服务暂停后继续该服务
 Stop()|停止该服务以及任何依赖于该服务的服务
+
+**如何获得管理员权限**
+
+对服务的管理需要系统管理员权限，在程序中获取管理员权限需要配置`app.manifest`文件。
+
+`app.manifest`文件在`Properties`目录下。如果没有，请按以下步骤操作：
+
+1. 在`VS解决方案浏览器`右键项目属性
+2. 选择 `Security（安全）` 选项
+3. 勾选 `Enable ClickOnce security settings（启用ClickOnce安全设置）` 选项
+4. `VS`会在`Properties`目录下生成`app.manifest`文件
+5. 取消勾选 `Enable ClickOnce security settings（启用ClickOnce安全设置）` 选项
+
+修改`app.manifest`文件，将
+
+    <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+
+改为：
+
+    <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+
+之后保存，重新编译。
+
+运行程序后会弹出`用户帐户控制`对话框，点击确定，程序将获得管理员权限；点击取消，程序将退出。

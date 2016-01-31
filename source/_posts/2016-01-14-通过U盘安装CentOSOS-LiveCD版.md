@@ -10,7 +10,8 @@ categories: "CentOS"
 用U盘引导系统，进入Grub命令行模式，输入如下命令：
 
 <pre><code class="prettyprint linenums">root (hd0,x)    //CentOS所在分区
-kernel /isolinux/vmlinuz0 root=live:/dev/sdbN liveimg quiet rhgb rootfstype=auto    //N=x+1
+//N=x+1
+kernel /isolinux/vmlinuz0 root=live:/dev/sdbN liveimg quiet rhgb rootfstype=auto
 initrd /isolinux/initrd0.img
 boot
 </code></pre>
