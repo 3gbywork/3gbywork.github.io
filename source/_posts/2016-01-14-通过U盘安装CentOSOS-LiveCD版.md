@@ -1,7 +1,7 @@
 ---
 title: 通过U盘安装CentOSOS_LiveCD版
 date: 2016-01-14 15:07:38
-tags: "CentOS, Linux, U盘安装CentOS"
+tags: "U盘安装CentOS"
 categories: "CentOS"
 ---
 

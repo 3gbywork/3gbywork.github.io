@@ -1,8 +1,8 @@
 ---
 title: 'C#使用ServiceController类操作Windows服务'
 date: 2016-01-14 14:39:16
-tags: "c#, WPF, Windows服务"
-categories: "WPF"
+tags: "Windows服务"
+categories: "C#"
 ---
 
 ServiceController类位于.Net Framework类库、System.ServiceProcess命名空间，使用时需要添加对`System.ServiceProcess.dll`的引用。
