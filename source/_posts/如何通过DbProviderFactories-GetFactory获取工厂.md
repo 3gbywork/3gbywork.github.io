@@ -12,19 +12,19 @@ tags: "C#"
 
 #### 1、在 app.config 中的配置文件片段
 
-  <configuration>
-    <system.data>
-      <DbProviderFactories>
-        <remove invariant="System.Data.SQLite" />
-        <add name="SQLite Data Provider" invariant="System.Data.SQLite"
-             description=".NET Framework Data Provider for SQLite"
-             type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite" />
-      </DbProviderFactories>
-    </system.data>
-    <connectionStrings>
-    <add name="Sqlite" providerName="System.Data.SQLite" connectionString="test.db" />
-    </connectionStrings>
-  </configuration>
+    <configuration>
+      <system.data>
+        <DbProviderFactories>
+          <remove invariant="System.Data.SQLite" />
+          <add name="SQLite Data Provider" invariant="System.Data.SQLite"
+                description=".NET Framework Data Provider for SQLite"
+                type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite" />
+        </DbProviderFactories>
+      </system.data>
+      <connectionStrings>
+      <add name="Sqlite" providerName="System.Data.SQLite" connectionString="test.db" />
+      </connectionStrings>
+    </configuration>
 
 #### 2、获取 DbFactory 对象
 
