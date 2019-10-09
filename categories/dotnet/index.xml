@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DOTNET on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/categories/dotnet/</link>
+    <description>Recent content in DOTNET on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Jun 2017 12:06:07 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/categories/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>管线开发</title>
+      <link>http://3gbywork.github.io/post/maf/</link>
+      <pubDate>Sun, 04 Jun 2017 12:06:07 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/maf/</guid>
+      <description>MAF (Managed Add-in Framework) Host - HostViewOfAddIn - HostAdapter - AddInContract - AddInAdapter - AddInBase - AddIn AddInContract [AddInContract] public interface [AddInContractName]:IContract HostAdapter [HostAdapter] public class [HostAdapterName]:HostViewOfAddInName 通过 ContractHandle 调用 AddInContract HostViewOfAddIn public interface [HostViewOfAddInName] AddInAdapter [AddInAdapter] public class [AddInAdapterName]:AddInContractName 通过 AddInBaseName 调用 AddInName 的实现 AddInBase [AddInBase] public interface [AddInBaseName] AddIn [AddIn(&amp;quot;AddInName&amp;quot;, Version = &amp;quot;x.x.x.x&amp;quot;)] public class [AddInName]:AddInBaseName Pipeline segment Assembly and project references</description>
+    </item>
+    
+    <item>
+      <title>Obtaining a DbProviderFactory</title>
+      <link>http://3gbywork.github.io/post/dbproviderfactories/</link>
+      <pubDate>Sat, 15 Oct 2016 00:39:17 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/dbproviderfactories/</guid>
+      <description>1、注册DbProviderFactory 在 machine.config 或 app.config 或 web.config 中存储提供程序和连接字符串信息。 下面以 SQLite 的配置为例，说明具体配置过程： 1、在 app.config 中的配置</description>
+    </item>
+    
+    <item>
+      <title>C#编程技巧</title>
+      <link>http://3gbywork.github.io/post/csharp/</link>
+      <pubDate>Thu, 18 Feb 2016 17:00:42 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/csharp/</guid>
+      <description>0. C#编程规则 1) 关于标识符的规则 尽管可以包含数字字符，但它们必须以字母或下划线开头。 不能把 C#关键字用作标识符。如果需要把某一保留字用作标识</description>
+    </item>
+    
+    <item>
+      <title>使用ServiceController类操作Windows服务</title>
+      <link>http://3gbywork.github.io/post/servicecontroller/</link>
+      <pubDate>Thu, 14 Jan 2016 14:39:16 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/servicecontroller/</guid>
+      <description>ServiceController类位于.Net Framework类库、System.ServiceProcess命名空间，使用时需要添加对</description>
+    </item>
+    
+  </channel>
+</rss>

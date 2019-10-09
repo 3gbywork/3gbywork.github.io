@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>使用NSIS打包应用程序 - 為學深知書之味  不勤何以業能成</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="3gbywork" />
+  <meta name="description" content="NSIS是一个开源的Windows平台下的安装程序制作程序,由C/C&#43;&#43;语言编写。想了解更多内容请访问百度百科。 怎么获得NSIS呢？这里有N" />
+<meta name="keywords" content="NSIS" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+<link rel="canonical" href="http://3gbywork.github.io/post/nsis/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="使用NSIS打包应用程序" />
+<meta property="og:description" content="NSIS是一个开源的Windows平台下的安装程序制作程序,由C/C&#43;&#43;语言编写。想了解更多内容请访问百度百科。 怎么获得NSIS呢？这里有N" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://3gbywork.github.io/post/nsis/" />
+<meta property="article:published_time" content="2015-12-28T14:25:52+08:00" />
+<meta property="article:modified_time" content="2016-01-14T14:25:52+08:00" />
+<meta itemprop="name" content="使用NSIS打包应用程序">
+<meta itemprop="description" content="NSIS是一个开源的Windows平台下的安装程序制作程序,由C/C&#43;&#43;语言编写。想了解更多内容请访问百度百科。 怎么获得NSIS呢？这里有N">
+
+
+<meta itemprop="datePublished" content="2015-12-28T14:25:52&#43;08:00" />
+<meta itemprop="dateModified" content="2016-01-14T14:25:52&#43;08:00" />
+<meta itemprop="wordCount" content="1756">
+
+
+
+<meta itemprop="keywords" content="package," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用NSIS打包应用程序"/>
+<meta name="twitter:description" content="NSIS是一个开源的Windows平台下的安装程序制作程序,由C/C&#43;&#43;语言编写。想了解更多内容请访问百度百科。 怎么获得NSIS呢？这里有N"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">為學深知書之味  不勤何以業能成</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/categories/">分类</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      為學深知書之味  不勤何以業能成
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用NSIS打包应用程序</h1>
+      
+      <div class="post-meta">
+        <time datetime="2015-12-28" class="post-time">
+          2015-12-28
+        </time>
+        <div class="post-category">
+            <a href="http://3gbywork.github.io/categories/howto/"> HOWTO </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p><a href="http://baike.baidu.com/view/1011444.htm" title="Nullsoft Scriptable Install System">NSIS</a>是一个开源的Windows平台下的安装程序制作程序,由C/C++语言编写。想了解更多内容请访问<a href="http://baike.baidu.com/view/1011444.htm" title="NSIS 百度百科">百度百科</a>。</p>
+
+<p>怎么获得NSIS呢？这里有<a href="http://sourceforge.net/projects/nsis/" title="NSIS sourceforge 项目主页">NSIS ANSI版本</a>和<a href="http://sourceforge.net/projects/nsisu/" title="NSISu sourceforge 项目主页">NSIS Unicode版本</a>下载地址。</p>
+
+<p>安装完成后就可以编辑我们的脚本了。</p>
+
+<p>我使用的是Notepad++这款文本编辑器，新建一个文件，<code>[Ctrl]+[Alt]+S</code> 将文件另存为扩展名为<code>.nsi</code>的文件，这样在我们编辑时就可以享受Notepad++提供的<strong>代码高亮</strong>和<strong>自动完成</strong>功能了。</p>
+
+<h3 id="1-编码格式-乱码-问题">1. 编码格式（乱码）问题</h3>
+
+<p>根据NSIS是ANSI版本还是Unicode版本来确定脚本的编码格式：</p>
+
+<ul>
+<li>ANSI版本： 在Notepad++的菜单栏选择<code>[格式]-&gt;[以ANSI格式编码]</code><br /></li>
+<li>Unicode版本： <code>[格式]-&gt;[以UCS-2 Little Endian格式编码]</code>
+<br /></li>
+</ul>
+
+<p>如果文件中<font color=red>已有文本</font>，请选择<font color=red><code>[转为...编码格式]</code></font>，否则可能会导致编译出的安装程序显示乱码。</p>
+
+<h3 id="2-多语言安装界面">2. 多语言安装界面</h3>
+
+<p>引用NSIS安装目录下<code>Contrib\Language files\</code>的<code>.nlf</code>类型语言文件，并在初始化时添加语言选项，具体实现请看代码：</p>
+
+<pre><code>; 引用语言资源文件（注意文件路径）
+LoadLanguageFile &quot;SimpChinese.nlf&quot;
+LoadLanguageFile &quot;English.nlf&quot;
+
+; 添加语言选项
+Function .onInit
+	Push &quot;&quot;
+	Push ${LANG_ENGLISH}
+	Push English
+	Push ${LANG_SIMPCHINESE}
+	Push &quot;简体中文&quot;
+	Push A ; A means auto count languages
+	       ; for the auto count to work the first empty push (Push &quot;&quot;) must remain
+	LangDLL::LangDialog &quot;Installer Language&quot; &quot;Please select the language of the 
+    installer&quot;
+
+	Pop $LANGUAGE
+	StrCmp $LANGUAGE &quot;cancel&quot; 0 +2
+		Abort
+FunctionEnd
+</code></pre>
+
+<p>如果脚本中引用了<code>MUI2.nsh</code>头文件，则脚本代码如下：</p>
+
+<pre><code>; &lt;font color=red&gt;引用&quot;MUI2.nsh&quot;头文件的脚本&lt;/font&gt;
+!include &quot;MUI2.nsh&quot;
+
+; 语言设置
+!insertmacro MUI_LANGUAGE &quot;English&quot;
+!insertmacro MUI_LANGUAGE &quot;SimpChinese&quot;
+
+; 显示语言选项
+Function .onInit
+  !insertmacro MUI_LANGDLL_DISPLAY
+FunctionEnd
+</code></pre>
+
+<h3 id="3-自定义变量的使用">3. 自定义变量的使用</h3>
+
+<p>假如我们的脚本中有多处使用软件名称，并且以后可能会更改软件名称，有什么简便的方法来避免复制、粘贴、替换吗？</p>
+
+<p>当然有。对于这种情况，我们可以定义一个变量，并在初始化时给变量赋值，具体实现请看代码：</p>
+
+<pre><code>; 软件名称
+Var SoftName
+
+Function .onInit
+	StrCpy $SoftName &quot;XXX&quot;
+FunctionEnd
+
+Function un.onInit
+	StrCpy $SoftName &quot;XXX&quot;
+FunctionEnd
+</code></pre>
+
+<h3 id="4-安装完成页面定制">4. 安装完成页面定制</h3>
+
+<p>在安装完成后，我们可能需要为用户提供可选的运行选项，如：运行XXX程序、打开Readme文件、访问XXX网站等。下面是<code>MUI_FINISHPAGE</code>支持的属性：</p>
+
+<pre><code># 运行XXX程序
+!define MUI_FINISHPAGE_RUN
+!define MUI_FINISHPAGE_RUN_TEXT
+!define MUI_FINISHPAGE_RUN_PARAMETERS
+!define MUI_FINISHPAGE_RUN_NOTCHECKED   ;默认不选中
+!define MUI_FINISHPAGE_RUN_FUNCTION
+
+# 自述文件
+!define MUI_FINISHPAGE_SHOWREADME
+!define MUI_FINISHPAGE_SHOWREADME_TEXT
+!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED 
+!define MUI_FINISHPAGE_SHOWREADME_FUNCTION
+
+# 访问XXX网站
+!define MUI_FINISHPAGE_LINK
+!define MUI_FINISHPAGE_LINK_LOCATION
+!define MUI_FINISHPAGE_LINK_COLOR
+</code></pre>
+
+<p>引用<code>MUI2.nsh</code>头文件的例子：</p>
+
+<pre><code>; 引用MUI2.nsh头文件
+!include &quot;MUI2.nsh&quot;
+
+; 定义完成后要运行的程序
+!define MUI_FINISHPAGE_RUN
+!define MUI_FINISHPAGE_RUN_FUNCTION &quot;runSoft&quot;
+!define MUI_FINISHPAGE_RUN_TEXT &quot;运行 $SoftName&quot;
+
+Function &quot;runSoft&quot;
+    /* 
+    运行的程序，可以多个
+    如果只运行一个程序，可以这么写：
+    !define MUI_FINISHPAGE_RUN &quot;$INSTDIR\XXX.exe&quot; 
+    */
+FunctionEnd
+
+; 自述文件
+!define MUI_FINISHPAGE_SHOWREADME &quot;readme.txt&quot;
+; 默认不选中自述文件复选框
+!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
+
+; 访问XXX网站
+!define MUI_FINISHPAGE_LINK &quot;XXX&quot;
+!define MUI_FINISHPAGE_LINK_LOCATION &quot;http://www.XXX.com&quot;
+; 文字颜色为红
+!define MUI_FINISHPAGE_LINK_COLOR &quot;FF0000&quot;
+</code></pre>
+
+<h3 id="5-执行外部命令">5. 执行外部命令</h3>
+
+<ol>
+<li>Exec &lsquo;&ldquo;命令&rdquo; [可选参数]&rsquo;</li>
+<li>ExecShell &ldquo;动作&rdquo; &ldquo;命令&rdquo; [参数] [SW_SHOWNORMAL | SW_SHOWMAXIMIZED | SW_SHOWMINIMIZED | SW_HIDE]</li>
+<li>ExecWait &lsquo;&ldquo;命令&rdquo;&rsquo; [用户变量（返回代码）]</li>
+<li>nsExec::Exec [参数]</li>
+</ol>
+
+<h3 id="6-注册dll组件">6. 注册DLL组件</h3>
+
+<p>如果我们发布的程序中有动态链接库需要注册到系统中，下面代码是一个比较通用的例子，将安装目录下的所有<code>.dll</code>类型文件注册到系统：</p>
+
+<pre><code>; 注册安装目录下的所有DLL到系统中
+FindFirst $0 $1 $INSTDIR\*.dll
+loop:
+	StrCmp $1 &quot;&quot; done
+	DetailPrint $1
+	RegDLL $INSTDIR\$1
+	FindNext $0 $1
+	Goto loop
+done:
+FindClose $0
+</code></pre>
+
+<h3 id="7-快捷方式">7. 快捷方式</h3>
+
+<p><strong>生成快捷方式</strong></p>
+
+<pre><code># 在桌面生成快捷方式
+CreateShortCut &quot;$DESKTOP\XXX.lnk&quot; &quot;$INSTDIR\XXX.exe&quot;
+
+# 在开始菜单生成快捷方式
+CreateDirectory &quot;$SMPROGRAMS\XXX&quot;   ; 在开始菜单创建程序文件夹
+CreateShortCut &quot;$SMPROGRAMS\XXX\XXX.lnk&quot; &quot;$INSTDIR\XXX.exe&quot;
+CreateShortCut &quot;$SMPROGRAMS\XXX\卸载XXX.lnk&quot; &quot;$INSTDIR\XXX.exe&quot;
+
+# 在快速启动栏生成快捷方式
+CreateShortCut &quot;$QUICKLAUNCH\XXX.lnk&quot; &quot;$INSTDIR\XXX.exe&quot;
+
+</code></pre>
+
+<p><strong>删除快捷方式</strong></p>
+
+<p>在Win7下创建快捷方式时，可能由于权限问题，快捷方式被创建到所有用户的路径，而不是当前用户的路径。XP不存在此问题。解决方法是：同时删除当前用户和所有用户路径下的快捷方式，示例代码如下：</p>
+
+<pre><code># 设置为当前用户
+SetShellVarContext current
+Call &lt;font color=red&gt;un.&lt;/font&gt;DeleteShortCut  ; 删除快捷方式函数
+; &lt;font color=red&gt;注意：如果此段代码在'Section &quot;Uninstall&quot;'里，函数名前必须加un.&lt;/font&gt;
+
+# 设置为所有用户
+SetShellVarContext all
+Call &lt;font color=red&gt;un.&lt;/font&gt;DeleteShortCut
+</code></pre>
+
+<p>删除快捷方式函数可以这样写：</p>
+
+<pre><code># 删除桌面快捷方式
+Delete &quot;$DESKTOP\XXX.lnk&quot;
+# 删除快捷启动栏快捷方式
+Delete &quot;$QUICKLAUNCH\XXX.lnk&quot;
+# 删除开始菜单快捷方式文件夹
+RMDir /r &quot;$SMPROGRAMS\XXX&quot;  /* /r递归删除目录 */
+</code></pre>
+
+<p><br /></p>
+
+<p>以上是我在使用NSIS过程遇到的一些问题，利用一些闲暇时间总结整理写出的这篇心得，以备不时之需。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">3gbywork</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2016-01-14
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://3gbywork.github.io/tags/package/">package</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/hexo/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">使用Hexo搭建个人博客</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="https://github.com/3gbywork/" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="http://3gbywork.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2015 -
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        3gbywork
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂七杂八 on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
+    <description>Recent content in 杂七杂八 on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 09 Oct 2019 10:26:07 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>收集一些有意思的资源</title>
+      <link>http://3gbywork.github.io/post/resources/</link>
+      <pubDate>Wed, 09 Oct 2019 10:26:07 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/resources/</guid>
+      <description>Apache log4net 匿名 svn $ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net 1、components: loggers, appenders, layouts, filter, object renderers Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods. C++ C++ 有用的网站 C++ Programming Language Tutorials − C++ 编程语言教程。 C++ Programming − 这本</description>
+    </item>
+    
+  </channel>
+</rss>

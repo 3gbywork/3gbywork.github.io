@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>冷知识 on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/categories/%E5%86%B7%E7%9F%A5%E8%AF%86/</link>
+    <description>Recent content in 冷知识 on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 19 Apr 2016 16:38:10 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/categories/%E5%86%B7%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows常见设备类型的GUID</title>
+      <link>http://3gbywork.github.io/post/windows-guid/</link>
+      <pubDate>Tue, 19 Apr 2016 16:38:10 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/windows-guid/</guid>
+      <description>1394 Host Bus Controller Class = 1394 ClassGuid = `{6bdd1fc1-810f-11d0-bec7-08002be2092f}` This class includes system-supplied drivers of 1394 host controllers connected on a PCI bus, but not drivers of 1394 peripherals. Battery Devices Class = Battery ClassGuid = `{72631e54-78a4-11d0-bcf7-00aa00b7b32a}` This class includes drivers of battery devices and UPSes. CD-ROM Drives Class = CDROM ClassGuid = `{4d36e965-e325-11ce-bfc1-08002be10318}` This class includes drivers of CD-ROM drives, including SCSI CD-ROM drives. By default, the system&#39;s</description>
+    </item>
+    
+  </channel>
+</rss>

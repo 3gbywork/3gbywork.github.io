@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://3gbywork.github.io/sitemap.xml

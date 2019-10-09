@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADO.NET on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/tags/ado.net/</link>
+    <description>Recent content in ADO.NET on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 15 Oct 2016 00:39:17 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/tags/ado.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obtaining a DbProviderFactory</title>
+      <link>http://3gbywork.github.io/post/dbproviderfactories/</link>
+      <pubDate>Sat, 15 Oct 2016 00:39:17 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/dbproviderfactories/</guid>
+      <description>1、注册DbProviderFactory 在 machine.config 或 app.config 或 web.config 中存储提供程序和连接字符串信息。 下面以 SQLite 的配置为例，说明具体配置过程： 1、在 app.config 中的配置</description>
+    </item>
+    
+  </channel>
+</rss>

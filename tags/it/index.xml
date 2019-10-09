@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>it on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/tags/it/</link>
+    <description>Recent content in it on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 09 May 2016 19:24:34 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS下挂载NTFS分区</title>
+      <link>http://3gbywork.github.io/post/centos-ntfs/</link>
+      <pubDate>Mon, 09 May 2016 19:24:34 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/centos-ntfs/</guid>
+      <description>参考：How to Mount an NTFS Filesystem 1. 安装所需的包 CentOS-5: yum install fuse fuse-ntfs-3g CentOS-7 和 CentOS-6: yum install ntfs-3g // 其他功能 yum install ntfsprogs ntfsprogs-gnomevfs 2. 挂载 NTFS 文件系统 创建挂载点： mkdir /mymnt/win 编辑 /etc/fstab，以只读</description>
+    </item>
+    
+    <item>
+      <title>Windows Mobile 6 模拟器如何联网</title>
+      <link>http://3gbywork.github.io/post/window-mobile/</link>
+      <pubDate>Sat, 23 Apr 2016 10:25:53 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/window-mobile/</guid>
+      <description>1. Windows Mobile 6 模拟器如何联网 首先，请确定电脑安装了 Virtual Machine Network Services（Virtual PC 2007） 驱动程序。 然后，设置模拟器网络 方式1： 在VS2</description>
+    </item>
+    
+    <item>
+      <title>Windows常见设备类型的GUID</title>
+      <link>http://3gbywork.github.io/post/windows-guid/</link>
+      <pubDate>Tue, 19 Apr 2016 16:38:10 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/windows-guid/</guid>
+      <description>1394 Host Bus Controller Class = 1394 ClassGuid = `{6bdd1fc1-810f-11d0-bec7-08002be2092f}` This class includes system-supplied drivers of 1394 host controllers connected on a PCI bus, but not drivers of 1394 peripherals. Battery Devices Class = Battery ClassGuid = `{72631e54-78a4-11d0-bcf7-00aa00b7b32a}` This class includes drivers of battery devices and UPSes. CD-ROM Drives Class = CDROM ClassGuid = `{4d36e965-e325-11ce-bfc1-08002be10318}` This class includes drivers of CD-ROM drives, including SCSI CD-ROM drives. By default, the system&#39;s</description>
+    </item>
+    
+    <item>
+      <title>通过U盘安装CentOS</title>
+      <link>http://3gbywork.github.io/post/install-centos/</link>
+      <pubDate>Thu, 14 Jan 2016 15:07:38 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/install-centos/</guid>
+      <description>把iso镜像文件解压到FAT32格式的分区根目录下 用U盘引导系统，进入Grub命令行模式，输入如下命令： root (hd0,x) //CentOS所在分区 //N=x+1 kernel /isolinux/vmlinuz0 root=live:/dev/sdbN</description>
+    </item>
+    
+  </channel>
+</rss>

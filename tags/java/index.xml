@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/tags/java/</link>
+    <description>Recent content in java on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 22 Feb 2016 15:44:51 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>《Java 8 编程参考官方教程（第9版）》 读书笔记</title>
+      <link>http://3gbywork.github.io/post/java-reference-notes/</link>
+      <pubDate>Mon, 22 Feb 2016 15:44:51 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/java-reference-notes/</guid>
+      <description>1. Java基本类型 1） 整型 名称|宽度|范围 &amp;ndash;|&amp;ndash; long|64|-9 223 372 036 854 775 808～9 223 372 036 854 775 807 int|32|-2 147 483 648~2 147 483 647 short|16|-32 768~32 767 byte|8|-128~127 Java不支持无符号的、只是正值的整数。</description>
+    </item>
+    
+    <item>
+      <title>《Java核心技术·基础知识（原书第9版）》 读书笔记</title>
+      <link>http://3gbywork.github.io/post/core-java-notes/</link>
+      <pubDate>Wed, 17 Feb 2016 13:43:17 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/core-java-notes/</guid>
+      <description>1. 类设计技巧 1） 一定要保证数据私有 这是最重要的，绝对不要破坏封装性，最好保持实例域的私有性。 2） 一定要对数据初始化 Java不对局部变量进行初</description>
+    </item>
+    
+  </channel>
+</rss>

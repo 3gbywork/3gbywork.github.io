@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>C#编程技巧 - 為學深知書之味  不勤何以業能成</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="3gbywork" />
+  <meta name="description" content="0. C#编程规则 1) 关于标识符的规则 尽管可以包含数字字符，但它们必须以字母或下划线开头。 不能把 C#关键字用作标识符。如果需要把某一保留字用作标识" />
+<meta name="keywords" content="C#" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+<link rel="canonical" href="http://3gbywork.github.io/post/csharp/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="C#编程技巧" />
+<meta property="og:description" content="0. C#编程规则 1) 关于标识符的规则 尽管可以包含数字字符，但它们必须以字母或下划线开头。 不能把 C#关键字用作标识符。如果需要把某一保留字用作标识" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://3gbywork.github.io/post/csharp/" />
+<meta property="article:published_time" content="2016-02-18T17:00:42+08:00" />
+<meta property="article:modified_time" content="2016-02-18T17:00:42+08:00" />
+<meta itemprop="name" content="C#编程技巧">
+<meta itemprop="description" content="0. C#编程规则 1) 关于标识符的规则 尽管可以包含数字字符，但它们必须以字母或下划线开头。 不能把 C#关键字用作标识符。如果需要把某一保留字用作标识">
+
+
+<meta itemprop="datePublished" content="2016-02-18T17:00:42&#43;08:00" />
+<meta itemprop="dateModified" content="2016-02-18T17:00:42&#43;08:00" />
+<meta itemprop="wordCount" content="2399">
+
+
+
+<meta itemprop="keywords" content="C#," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="C#编程技巧"/>
+<meta name="twitter:description" content="0. C#编程规则 1) 关于标识符的规则 尽管可以包含数字字符，但它们必须以字母或下划线开头。 不能把 C#关键字用作标识符。如果需要把某一保留字用作标识"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">為學深知書之味  不勤何以業能成</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/categories/">分类</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      為學深知書之味  不勤何以業能成
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://3gbywork.github.io/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">C#编程技巧</h1>
+      
+      <div class="post-meta">
+        <time datetime="2016-02-18" class="post-time">
+          2016-02-18
+        </time>
+        <div class="post-category">
+            <a href="http://3gbywork.github.io/categories/dotnet/"> DOTNET </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h3 id="0-c-编程规则">0. C#编程规则</h3>
+
+<p>1) 关于标识符的规则</p>
+
+<ul>
+<li>尽管可以包含数字字符，但它们必须以字母或下划线开头。</li>
+<li>不能把 C#关键字用作标识符。如果需要把某一保留字用作标识符，那么可以在标识符的前面加上前缀符号@，告知编译器其后的内容是一个标识符。如：abstract是C#关键字，@abstract有效的标识符。</li>
+</ul>
+
+<p>2) 命名约定</p>
+
+<h4 id="pascal-大小写形式的命名约定">Pascal 大小写形式的命名约定</h4>
+
+<ul>
+<li>名称空间和类，以及基类中的成员等的名称，如：<code>EmployeeSalary</code></li>
+<li>在C#中常量（其他语言中常常全部大写）的名称，如：<code>const int MaximumLength;</code></li>
+</ul>
+
+<h4 id="camel-大小写形式的命名约定">camel 大小写形式的命名约定</h4>
+
+<ul>
+<li>类型中所有私有成员字段的名称，如：<code>private int _subscriberId;</code>注意前缀名常常用一条下划线开头</li>
+<li>传递给方法的所有参数的名称，如：<code>public void RecordSale(string salesmanName, int quantity);</code></li>
+</ul>
+
+<p>3) 名称空间的名称</p>
+
+<p>Microsoft建议使用如下的名称空间：<code>&lt;CompanyName&gt;.&lt;TechnologyName&gt;</code></p>
+
+<p>4) 属性和方法的使用</p>
+
+<p>满足以下所有条件，就把它设置为属性，否则就应使用方法：</p>
+
+<ul>
+<li>客户端代码应能读取它的值，最好不要使用只写属性</li>
+<li>读取该值不应花太长的时间</li>
+<li>读取该值不应有任何细微的和不希望的负面效应</li>
+<li>可以按照任何顺序设置属性</li>
+<li>顺序读取属性也应有相同的效果</li>
+</ul>
+
+<p>5) 字段的用法</p>
+
+<p>字段的用法非常简单。 字段应总是私有的，但在某些情况下也可以把常量或只读字段设置为公有。 原因是如果把字段设置为公有，就不利于在以后扩展或修改类。</p>
+
+<h3 id="1-帮助文件制作与显示">1. 帮助文件制作与显示</h3>
+
+<p>帮助文件一般是<code>chm</code>格式的文件，这里介绍的是如何将“相关人员”制作的<code>word</code>文档转化为<code>chm</code>文件：</p>
+
+<p>网上有一款<code>word2chm</code>软件个人认为很好用，虽然界面看起来很<code>low</code>，但是好用、易用是一大特色。</p>
+
+<p>有兴趣的朋友[点此](&ldquo;<a href="http://pan.baidu.com/s/1kUd9Pl1&quot;">http://pan.baidu.com/s/1kUd9Pl1&quot;</a> &ldquo;Word2Chm 百度网盘 提取密码：p466&rdquo;)下载，使用方法就不赘述了。</p>
+
+<p>附上版权声明样例：</p>
+
+<pre><code>Copyright&amp;copy; 2015-2016 &lt;a class=&quot;moLink&quot; href=&quot;&quot; target=&quot;_blank&quot;&gt;公司&lt;/a&gt;, 
+All rights reserved.&lt;br /&gt;
+Powered by &lt;a href=&quot;http://3gbywork.github.io&quot; target=&quot;_blank&quot;&gt;3gbywork&lt;/a&gt;
+</code></pre>
+
+<p><em>下面结合VS工程做详细说明：</em></p>
+
+<p>添加<code>help.chm</code>帮助文件到<code>Resources.resx</code>资源文件中，在程序中可以通过以下方法生成<code>help.chm</code>并打开：</p>
+
+<pre><code>// 程序所在路径
+string path = Environment.CurrentDirectory + &quot;/Doc&quot;;
+string file = path + &quot;/help.chm&quot;;
+
+// 判断帮助文件是否存在，不存在则创建
+if (!File.Exists(file))
+{
+    try
+    {
+        // 如果存在 help.chm 文件夹则删除
+        if (Directory.Exists(file))
+            Directory.Delete(file);
+        // 如果不存在 Doc 文件夹则创建
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+        // 将帮助文件写入到当前路径的Doc目录下
+        // 并以 help.chm 命名
+        byte[] help = Properties.Resources.help;
+        FileStream fs = new FileStream(file, 
+        FileMode.Create, FileAccess.Write);
+        fs.Write(help, 0, help.Length);
+        fs.Flush();
+        fs.Close();
+    }
+    catch (Exception exp)
+    {
+        MessageBox.Show(exp.Message, &quot;错误！&quot;, 
+        MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+}
+// 如果文件存在则打开
+if (File.Exists(file))
+    Process.Start(file);
+</code></pre>
+
+<p><img src="/images/vs_help.png" alt="添加帮助文件到工程中" title="添加帮助文件到工程中" /></p>
+
+<p>也可将帮助文件添加到VS工程中，并将<code>help.chm</code>文件属性的<code>Build Action</code>设为<code>Content</code>，<code>Copy to Output Directory</code>设为<code>Copy always</code>，参见上图。</p>
+
+<p>这样每次编译时，VS就会把<code>help.chm</code>复制到输出目录下的<code>Doc</code>目录下。</p>
+
+<h3 id="2-扩展方法">2. 扩展方法</h3>
+
+<p>扩展方法被定义为静态方法，但它们是通过实例方法语法进行调用的。它们的第一个参数指定该方法作用于哪个类型，并且该参数以 this 修饰符为前缀。仅当你使用 using 指令将命名空间显式导入到源代码中之后，扩展方法才位于范围中。</p>
+
+<pre><code>namespace CustomExtensions
+{
+    //Extension methods must be defined in a static class
+    public static class StringExtension
+    {
+        // This is the extension method.
+        // The first parameter takes the &quot;this&quot; modifier
+        // and specifies the type for which the method is defined.
+        public static int WordCount(this String str)
+        {
+            return str.Split(new char[] {' ', '.','?'}, StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+    }
+}
+
+namespace Extension_Methods_Simple
+{
+    //Import the extension method namespace.
+    using CustomExtensions;
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = &quot;The quick brown fox jumped over the lazy dog.&quot;;
+            //  Call the method as if it were an 
+            //  instance method on the type. Note that the first
+            //  parameter is not specified by the calling code.
+            int i = s.WordCount();
+            System.Console.WriteLine(&quot;Word count of s is {0}&quot;, i);
+        }
+    }
+}
+</code></pre>
+
+<h3 id="3-实例化泛型对象">3. 实例化泛型对象</h3>
+
+<p>方法1：</p>
+
+<pre><code>void Method&lt;T&gt;(T t) where T : new()
+{
+    T tmp = new T();
+}
+</code></pre>
+
+<p>方法2：</p>
+
+<pre><code>void Method&lt;T&gt;(T t)
+{
+    T tmp = Activator.CreateInstance&lt;T&gt;();
+}
+</code></pre>
+
+<h3 id="4-限定泛型参数的超类">4. 限定泛型参数的超类</h3>
+
+<pre><code>// U是CLASSA类或是其子类
+// V是CLASSB类或是其子类
+void Method&lt;U, V&gt;(U u, V v) where U : CLASSA where V : CLASSB
+{
+}
+</code></pre>
+
+<h3 id="5-如何在-wpf-中引用-winform-的控件">5. 如何在 WPF 中引用 Winform 的控件</h3>
+
+<ul>
+<li>在 xaml 中使用</li>
+</ul>
+
+<p>首先，添加对 <code>System.Windows.Forms.dll</code> 和 <code>WindowsFormsIntegration.dll</code> 的引用</p>
+
+<p>然后在 xaml 文件中添加以下命名空间</p>
+
+<pre><code>xmlns:wfi=&quot;clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration&quot;
+xmlns:wf=&quot;clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms&quot;
+</code></pre>
+
+<p>最后使用 Winform 控件时要这么写：</p>
+
+<pre><code>&lt;wfi:WindowsFormsHost&gt;
+    &lt;wf:PropertyGrid x:Name=&quot;propertyGrid&quot;/&gt;
+&lt;/wfi:WindowsFormsHost&gt;
+</code></pre>
+
+<ul>
+<li>在代码中使用</li>
+</ul>
+
+<p>首先，添加对 <code>System.Windows.Forms.dll</code> 的引用</p>
+
+<p>使用时推荐直接写出完整的命名空间（避免和 WPF 控件的命名空间冲突造成不明确的引用）</p>
+
+<pre><code>System.Windows.Forms.PropertyGrid propertyGrid = new System.Windows.Forms.PropertyGrid();
+</code></pre>
+
+<h3 id="6-如何获取拖入窗口的文件路径">6. 如何获取拖入窗口的文件路径</h3>
+
+<p>允许将文件拖入窗口</p>
+
+<pre><code>&lt;Window AllowDrop=&quot;True&quot; Drop=&quot;Window_Drop&quot;&gt;
+&lt;/Window&gt;
+</code></pre>
+
+<p>处理拖拽事件</p>
+
+<pre><code>private void Window_Drop(object sender, DragEventArgs e)
+{
+    string filepath = &quot;&quot;;
+    // 判断拖入的是不是文件类型（文件夹亦可）
+    if (e.Data.GetDataPresent(DataFormats.FileDrop))
+    {
+        // Array是抽象类，string[] 继承自 Array类
+        Array arr = (Array)e.Data.GetData(DataFormats.FileDrop);
+        string[] stra = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+        // 仅演示获取一个路径
+        filepath = ((Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
+        filepath = stra[0];
+    }
+}
+</code></pre>
+
+<h3 id="7-使用-propertygrid-的一些小技巧">7. 使用 PropertyGrid 的一些小技巧</h3>
+
+<p>要在 PropertyGrid 中显示某个对象的属性，只需设置 PropertyGrid 的 SelectedObject 属性即可。</p>
+
+<p>此时在 PropertyGrid 控件中显示的属性是指定对象的所有属性及其值。</p>
+
+<p>设置属性的“可见”特性：</p>
+
+<pre><code>// 指定某一属性或事件是否应在“属性”窗口中显示。
+[Browsable(false)]
+public string SomeProperties { get; set;}
+</code></pre>
+
+<p>设置属性的描述信息：</p>
+
+<pre><code>// 指定属性或事件的描述。
+[DescriptionAttribute(&quot;属性的描述信息&quot;)]
+public string SomeProperties { get; set;}
+</code></pre>
+
+<p>设置属性的显示名称：</p>
+
+<pre><code>// 指定属性、事件或不采用任何参数的公共 void 方法的显示名称。
+[DisplayNameAttribute(&quot;属性的显示名称&quot;)]
+public string SomeProperties { get; set;}
+</code></pre>
+
+<p>设置属性的只读特性：</p>
+
+<pre><code>// 指定某个属性是否只能在设计时设置。
+[DesignOnlyAttribute(true)]
+public string SomeProperties { get; set;}
+</code></pre>
+
+<p>对属性进行分组：</p>
+
+<pre><code>// 指定当属性或事件显示在一个设置为“按分类顺序”模式的 
+// PropertyGrid 控件中时，用于对属性或事件分组的类别的名称。
+// 在分组名称前加&quot;\t&quot;可以提高分组显示顺序，并且不会显示制表符
+[CategoryAttribute (&quot;分组名称&quot;)]
+public string SomeProperties { get; set;}
+</code></pre>
+
+<h3 id="8-using-关键字的两种用途">8. using 关键字的两种用途</h3>
+
+<ul>
+<li>引用名称空间，如： <code>using System;</code></li>
+<li>给类和名称空间指定别名。如果名称空间的名称非常长，又要在代
+码中多次引用，但不希望该名称空间的名称包含在 using 指令中(例如，避免类名冲突，就可以给该名称空间指定一个别名，其语法如下：<code>using alias = NamespaceName;</code></li>
+</ul>
+
+<h3 id="9-方法的命名参数">9. 方法的命名参数</h3>
+
+<p>参数一般需要按定义的顺序传递给方法。命名参数允许按任意顺序传递。所有下面的方法：</p>
+
+<pre><code>string FullName(string firstName, string lastName)
+{
+    return firstName + &quot; &quot; + lastName;
+}
+</code></pre>
+
+<p>下面的方法调用会返回相同的全名：</p>
+
+<pre><code>FullName(&quot;John&quot;, &quot;Doe&quot;);
+FullName(lastName: &quot;Doe&quot;, firstName: &quot;John&quot;);
+</code></pre>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">3gbywork</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2016-02-18
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://3gbywork.github.io/tags/c#/">C#</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/java-reference-notes/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">《Java 8 编程参考官方教程（第9版）》 读书笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/git-ssh/">
+            <span class="next-text nav-default">使用Git生成SSH公钥</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="https://github.com/3gbywork/" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="http://3gbywork.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2015 -
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        3gbywork
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

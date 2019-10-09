@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/tags/vim/</link>
+    <description>Recent content in Vim on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 16 Jan 2016 22:00:42 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim基础教程笔记</title>
+      <link>http://3gbywork.github.io/post/vim-notes/</link>
+      <pubDate>Sat, 16 Jan 2016 22:00:42 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/vim-notes/</guid>
+      <description>1. 光标移动 ^ k &amp;lt; h l &amp;gt; j v 2. 退出与保存 按 &amp;lt;ESC&amp;gt; 键（确保处于正常模式） 不保存更改输入: :q! &amp;lt;回车&amp;gt; 保存更改输入: :wq &amp;lt;回车&amp;gt; :w</description>
+    </item>
+    
+  </channel>
+</rss>

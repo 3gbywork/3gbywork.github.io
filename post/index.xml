@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 為學深知書之味  不勤何以業能成</title>
+    <link>http://3gbywork.github.io/post/</link>
+    <description>Recent content in Posts on 為學深知書之味  不勤何以業能成</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 09 Oct 2019 10:26:07 +0800</lastBuildDate>
+    
+	<atom:link href="http://3gbywork.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>收集一些有意思的资源</title>
+      <link>http://3gbywork.github.io/post/resources/</link>
+      <pubDate>Wed, 09 Oct 2019 10:26:07 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/resources/</guid>
+      <description>Apache log4net 匿名 svn $ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net 1、components: loggers, appenders, layouts, filter, object renderers Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods. C++ C++ 有用的网站 C++ Programming Language Tutorials − C++ 编程语言教程。 C++ Programming − 这本</description>
+    </item>
+    
+    <item>
+      <title>静态站点生成器</title>
+      <link>http://3gbywork.github.io/post/staticgen/</link>
+      <pubDate>Fri, 01 Feb 2019 14:42:48 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/staticgen/</guid>
+      <description>最近想弄静态站点玩玩，之前用了Hexo，现在想了解更多的生成器。 有个网站罗列了一系列静态站点生成器：StaticGen 试了： Next Hugo Gatsby Hexo 由于Je</description>
+    </item>
+    
+    <item>
+      <title>管线开发</title>
+      <link>http://3gbywork.github.io/post/maf/</link>
+      <pubDate>Sun, 04 Jun 2017 12:06:07 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/maf/</guid>
+      <description>MAF (Managed Add-in Framework) Host - HostViewOfAddIn - HostAdapter - AddInContract - AddInAdapter - AddInBase - AddIn AddInContract [AddInContract] public interface [AddInContractName]:IContract HostAdapter [HostAdapter] public class [HostAdapterName]:HostViewOfAddInName 通过 ContractHandle 调用 AddInContract HostViewOfAddIn public interface [HostViewOfAddInName] AddInAdapter [AddInAdapter] public class [AddInAdapterName]:AddInContractName 通过 AddInBaseName 调用 AddInName 的实现 AddInBase [AddInBase] public interface [AddInBaseName] AddIn [AddIn(&amp;quot;AddInName&amp;quot;, Version = &amp;quot;x.x.x.x&amp;quot;)] public class [AddInName]:AddInBaseName Pipeline segment Assembly and project references</description>
+    </item>
+    
+    <item>
+      <title>Obtaining a DbProviderFactory</title>
+      <link>http://3gbywork.github.io/post/dbproviderfactories/</link>
+      <pubDate>Sat, 15 Oct 2016 00:39:17 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/dbproviderfactories/</guid>
+      <description>1、注册DbProviderFactory 在 machine.config 或 app.config 或 web.config 中存储提供程序和连接字符串信息。 下面以 SQLite 的配置为例，说明具体配置过程： 1、在 app.config 中的配置</description>
+    </item>
+    
+    <item>
+      <title>CentOS下挂载NTFS分区</title>
+      <link>http://3gbywork.github.io/post/centos-ntfs/</link>
+      <pubDate>Mon, 09 May 2016 19:24:34 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/centos-ntfs/</guid>
+      <description>参考：How to Mount an NTFS Filesystem 1. 安装所需的包 CentOS-5: yum install fuse fuse-ntfs-3g CentOS-7 和 CentOS-6: yum install ntfs-3g // 其他功能 yum install ntfsprogs ntfsprogs-gnomevfs 2. 挂载 NTFS 文件系统 创建挂载点： mkdir /mymnt/win 编辑 /etc/fstab，以只读</description>
+    </item>
+    
+    <item>
+      <title>Windows Mobile 6 模拟器如何联网</title>
+      <link>http://3gbywork.github.io/post/window-mobile/</link>
+      <pubDate>Sat, 23 Apr 2016 10:25:53 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/window-mobile/</guid>
+      <description>1. Windows Mobile 6 模拟器如何联网 首先，请确定电脑安装了 Virtual Machine Network Services（Virtual PC 2007） 驱动程序。 然后，设置模拟器网络 方式1： 在VS2</description>
+    </item>
+    
+    <item>
+      <title>【转载】HP大中华区总裁孙振耀的退休感言</title>
+      <link>http://3gbywork.github.io/post/sunzhenyao-reprint/</link>
+      <pubDate>Tue, 19 Apr 2016 21:43:46 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/sunzhenyao-reprint/</guid>
+      <description>虽然离开惠普仅有十五天，但感觉上惠普已经离我很远。我的心思更多放在规划自己第二阶段的人生，这并非代表我对惠普没有任何眷恋，主要还是想以此驱动</description>
+    </item>
+    
+    <item>
+      <title>【转载】胡振宁的职场规划</title>
+      <link>http://3gbywork.github.io/post/huzhengning-reprint/</link>
+      <pubDate>Tue, 19 Apr 2016 21:43:46 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/huzhengning-reprint/</guid>
+      <description>前言 2007年6月，胡振宁先生写了一篇叫做《你为什么还没有好工作》的文章，之后不知道什么人拿去和孙振耀先生的一篇文章接到一起，传来传去变成了</description>
+    </item>
+    
+    <item>
+      <title>Windows常见设备类型的GUID</title>
+      <link>http://3gbywork.github.io/post/windows-guid/</link>
+      <pubDate>Tue, 19 Apr 2016 16:38:10 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/windows-guid/</guid>
+      <description>1394 Host Bus Controller Class = 1394 ClassGuid = `{6bdd1fc1-810f-11d0-bec7-08002be2092f}` This class includes system-supplied drivers of 1394 host controllers connected on a PCI bus, but not drivers of 1394 peripherals. Battery Devices Class = Battery ClassGuid = `{72631e54-78a4-11d0-bcf7-00aa00b7b32a}` This class includes drivers of battery devices and UPSes. CD-ROM Drives Class = CDROM ClassGuid = `{4d36e965-e325-11ce-bfc1-08002be10318}` This class includes drivers of CD-ROM drives, including SCSI CD-ROM drives. By default, the system&#39;s</description>
+    </item>
+    
+    <item>
+      <title>《Java 8 编程参考官方教程（第9版）》 读书笔记</title>
+      <link>http://3gbywork.github.io/post/java-reference-notes/</link>
+      <pubDate>Mon, 22 Feb 2016 15:44:51 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/java-reference-notes/</guid>
+      <description>1. Java基本类型 1） 整型 名称|宽度|范围 &amp;ndash;|&amp;ndash; long|64|-9 223 372 036 854 775 808～9 223 372 036 854 775 807 int|32|-2 147 483 648~2 147 483 647 short|16|-32 768~32 767 byte|8|-128~127 Java不支持无符号的、只是正值的整数。</description>
+    </item>
+    
+    <item>
+      <title>C#编程技巧</title>
+      <link>http://3gbywork.github.io/post/csharp/</link>
+      <pubDate>Thu, 18 Feb 2016 17:00:42 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/csharp/</guid>
+      <description>0. C#编程规则 1) 关于标识符的规则 尽管可以包含数字字符，但它们必须以字母或下划线开头。 不能把 C#关键字用作标识符。如果需要把某一保留字用作标识</description>
+    </item>
+    
+    <item>
+      <title>使用Git生成SSH公钥</title>
+      <link>http://3gbywork.github.io/post/git-ssh/</link>
+      <pubDate>Wed, 17 Feb 2016 14:14:55 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/git-ssh/</guid>
+      <description>1. 确认是否已经拥有密钥 $ cd ~/.ssh // 默认情况下SSH密钥存储地址 $ ls 如果存在类似id_rsa（私钥）、id_rsa.pub（公钥）的文件，则说明曾</description>
+    </item>
+    
+    <item>
+      <title>《Java核心技术·基础知识（原书第9版）》 读书笔记</title>
+      <link>http://3gbywork.github.io/post/core-java-notes/</link>
+      <pubDate>Wed, 17 Feb 2016 13:43:17 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/core-java-notes/</guid>
+      <description>1. 类设计技巧 1） 一定要保证数据私有 这是最重要的，绝对不要破坏封装性，最好保持实例域的私有性。 2） 一定要对数据初始化 Java不对局部变量进行初</description>
+    </item>
+    
+    <item>
+      <title>Vim基础教程笔记</title>
+      <link>http://3gbywork.github.io/post/vim-notes/</link>
+      <pubDate>Sat, 16 Jan 2016 22:00:42 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/vim-notes/</guid>
+      <description>1. 光标移动 ^ k &amp;lt; h l &amp;gt; j v 2. 退出与保存 按 &amp;lt;ESC&amp;gt; 键（确保处于正常模式） 不保存更改输入: :q! &amp;lt;回车&amp;gt; 保存更改输入: :wq &amp;lt;回车&amp;gt; :w</description>
+    </item>
+    
+    <item>
+      <title>通过U盘安装CentOS</title>
+      <link>http://3gbywork.github.io/post/install-centos/</link>
+      <pubDate>Thu, 14 Jan 2016 15:07:38 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/install-centos/</guid>
+      <description>把iso镜像文件解压到FAT32格式的分区根目录下 用U盘引导系统，进入Grub命令行模式，输入如下命令： root (hd0,x) //CentOS所在分区 //N=x+1 kernel /isolinux/vmlinuz0 root=live:/dev/sdbN</description>
+    </item>
+    
+    <item>
+      <title>使用ServiceController类操作Windows服务</title>
+      <link>http://3gbywork.github.io/post/servicecontroller/</link>
+      <pubDate>Thu, 14 Jan 2016 14:39:16 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/servicecontroller/</guid>
+      <description>ServiceController类位于.Net Framework类库、System.ServiceProcess命名空间，使用时需要添加对</description>
+    </item>
+    
+    <item>
+      <title>使用Hexo搭建个人博客</title>
+      <link>http://3gbywork.github.io/post/hexo/</link>
+      <pubDate>Thu, 14 Jan 2016 14:33:24 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/hexo/</guid>
+      <description>1. 安装 安装 Git Windows: 下载并安装 Linux(Ubuntu, Debian): sudo apt-get install git-core Linux(Fedora, RedHat, CentOS): sudo yum install git-core 安装 Node.js 使用 nvm 安装 Node.js cURL: $ curl -o- https://raw.github.com/creationix/nvm/master/install.sh | sh Wget: $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh 安装完成后，重启终端并执行下列命令即可安装 Node.js</description>
+    </item>
+    
+    <item>
+      <title>使用NSIS打包应用程序</title>
+      <link>http://3gbywork.github.io/post/nsis/</link>
+      <pubDate>Mon, 28 Dec 2015 14:25:52 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/nsis/</guid>
+      <description>NSIS是一个开源的Windows平台下的安装程序制作程序,由C/C++语言编写。想了解更多内容请访问百度百科。 怎么获得NSIS呢？这里有N</description>
+    </item>
+    
+  </channel>
+</rss>
