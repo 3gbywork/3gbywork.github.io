@@ -58,8 +58,11 @@ SQLite 分为 32-bit 和 64-bit，Precompiled Binaries 也分为 带bundle 和 �
 * Any CPU 和 x86 对应 SQLite 32-bit
 * x64 则对应 SQLite 64-bit
 * 如果选择不带bundle的SQLite，则文件组织结构如下：
-  --`System.Data.SQLite.dll`
-  --x86 Folder
-    --`SQLite.Interop.dll` 32-bit
-  --x64 Folder
-    --`SQLite.Interop.dll` 64-bit
+
+```
+--System.Data.SQLite.dll
+--x86 Folder
+  --SQLite.Interop.dll 32-bit
+--x64 Folder
+  --SQLite.Interop.dll 64-bit
+```

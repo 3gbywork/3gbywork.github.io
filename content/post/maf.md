@@ -25,32 +25,32 @@ mathjax: false
 Host - HostViewOfAddIn - HostAdapter - AddInContract - AddInAdapter - AddInBase - AddIn
 
 #### AddInContract
-[AddInContract]
-public interface [AddInContractName]:IContract
+    [AddInContract]
+    public interface [AddInContractName]:IContract
 
 #### HostAdapter
-[HostAdapter]
-public class [HostAdapterName]:HostViewOfAddInName
+    [HostAdapter]
+    public class [HostAdapterName]:HostViewOfAddInName
 通过 ContractHandle 调用 AddInContract
 
 #### HostViewOfAddIn
-public interface [HostViewOfAddInName]
+    public interface [HostViewOfAddInName]
 
 #### AddInAdapter
-[AddInAdapter]
-public class [AddInAdapterName]:AddInContractName
+    [AddInAdapter]
+    public class [AddInAdapterName]:AddInContractName
 通过 AddInBaseName 调用 AddInName 的实现
 
 #### AddInBase
-[AddInBase]
-public interface [AddInBaseName]
+    [AddInBase]
+    public interface [AddInBaseName]
 
 #### AddIn
-[AddIn("AddInName", Version = "x.x.x.x")]
-public class [AddInName]:AddInBaseName
-
+    [AddIn("AddInName", Version = "x.x.x.x")]
+    public class [AddInName]:AddInBaseName
 
 Pipeline segment | Assembly and project references | Namespace and type references
+---|---|---
 Contract | System.AddIn.dll System.AddIn.Contract.dll | System.AddIn.Pipeline System.AddIn.Contract
 Add-in view | System.AddIn.dll | System.AddIn.Pipeline
 Add-in-side adapter | System.AddIn.dll System.AddIn.Contract.dll Add-in view segment Contract segment | System.AddIn.Pipeline
@@ -60,10 +60,10 @@ Add-In | System.AddIn.dll Add-in view segment | System.AddIn add-in view
 
 ### 目录结构
 
-Pipeline
-  AddIns
-    BooksAddIn
-  AddInSideAdapters
-  AddInViews
-  Contracts
-  HostSideAdapters
+    Pipeline
+      AddIns
+        BooksAddIn
+      AddInSideAdapters
+      AddInViews
+      Contracts
+      HostSideAdapters
