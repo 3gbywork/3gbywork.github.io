@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/3gbywork/3gbywork.github.io.git
+	branch = master
