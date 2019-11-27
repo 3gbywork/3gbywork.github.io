@@ -6,10 +6,19 @@
     <description>Recent content in 随笔 on 為學深知書之味  不勤何以業能成</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Feb 2019 14:42:48 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2019 17:11:25 +0800</lastBuildDate>
     
 	<atom:link href="http://3gbywork.github.io/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Qt Tips</title>
+      <link>http://3gbywork.github.io/post/qt-tips/</link>
+      <pubDate>Tue, 26 Nov 2019 17:11:25 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/qt-tips/</guid>
+      <description>记录一下在学习Qt的过程中，一些浅薄的认识。 qmake 工程文件 扩展名 意义 备注 pro project 普通工程文件 pri project include 将pro中文件分成多个模块，或提取pro中共同的设</description>
+    </item>
     
     <item>
       <title>静态站点生成器</title>

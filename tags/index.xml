@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 為學深知書之味  不勤何以業能成</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Feb 2019 14:42:48 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2019 17:11:25 +0800</lastBuildDate>
     
 	<atom:link href="http://3gbywork.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Qt</title>
+      <link>http://3gbywork.github.io/tags/qt/</link>
+      <pubDate>Tue, 26 Nov 2019 17:11:25 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/tags/qt/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>staticgen</title>

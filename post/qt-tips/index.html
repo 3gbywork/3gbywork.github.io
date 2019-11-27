@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>收集一些有意思的资源 - 為學深知書之味  不勤何以業能成</title>
+  <title>Qt Tips - 為學深知書之味  不勤何以業能成</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="3gbywork" />
-  <meta name="description" content="Apache log4net 匿名 svn $ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net 1、components: loggers, appenders, layouts, filter, object renderers Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods. C&#43;&#43; C&#43;&#43; 有用的网站 C&#43;&#43; Programming Language Tutorials − C&#43;&#43; 编程语言教程。 C&#43;&#43; Programming − 这本" />
+  <meta name="description" content="记录一下在学习Qt的过程中，一些浅薄的认识。 qmake 工程文件 扩展名 意义 备注 pro project 普通工程文件 pri project include 将pro中文件分成多个模块，或提取pro中共同的设" />
+<meta name="keywords" content="tips" />
 
 
 
@@ -34,7 +35,7 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="http://3gbywork.github.io/post/resources/" />
+<link rel="canonical" href="http://3gbywork.github.io/post/qt-tips/" />
 
 
 
@@ -58,26 +59,26 @@
 
 
 
-<meta property="og:title" content="收集一些有意思的资源" />
-<meta property="og:description" content="Apache log4net 匿名 svn $ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net 1、components: loggers, appenders, layouts, filter, object renderers Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods. C&#43;&#43; C&#43;&#43; 有用的网站 C&#43;&#43; Programming Language Tutorials − C&#43;&#43; 编程语言教程。 C&#43;&#43; Programming − 这本" />
+<meta property="og:title" content="Qt Tips" />
+<meta property="og:description" content="记录一下在学习Qt的过程中，一些浅薄的认识。 qmake 工程文件 扩展名 意义 备注 pro project 普通工程文件 pri project include 将pro中文件分成多个模块，或提取pro中共同的设" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://3gbywork.github.io/post/resources/" />
-<meta property="article:published_time" content="2019-10-09T10:26:07+08:00" />
-<meta property="article:modified_time" content="2019-10-09T10:26:07+08:00" />
-<meta itemprop="name" content="收集一些有意思的资源">
-<meta itemprop="description" content="Apache log4net 匿名 svn $ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net 1、components: loggers, appenders, layouts, filter, object renderers Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods. C&#43;&#43; C&#43;&#43; 有用的网站 C&#43;&#43; Programming Language Tutorials − C&#43;&#43; 编程语言教程。 C&#43;&#43; Programming − 这本">
+<meta property="og:url" content="http://3gbywork.github.io/post/qt-tips/" />
+<meta property="article:published_time" content="2019-11-26T17:11:25+08:00" />
+<meta property="article:modified_time" content="2019-11-26T17:11:25+08:00" />
+<meta itemprop="name" content="Qt Tips">
+<meta itemprop="description" content="记录一下在学习Qt的过程中，一些浅薄的认识。 qmake 工程文件 扩展名 意义 备注 pro project 普通工程文件 pri project include 将pro中文件分成多个模块，或提取pro中共同的设">
 
 
-<meta itemprop="datePublished" content="2019-10-09T10:26:07&#43;08:00" />
-<meta itemprop="dateModified" content="2019-10-09T10:26:07&#43;08:00" />
-<meta itemprop="wordCount" content="340">
+<meta itemprop="datePublished" content="2019-11-26T17:11:25&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-26T17:11:25&#43;08:00" />
+<meta itemprop="wordCount" content="1250">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="Qt," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="收集一些有意思的资源"/>
-<meta name="twitter:description" content="Apache log4net 匿名 svn $ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net 1、components: loggers, appenders, layouts, filter, object renderers Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods. C&#43;&#43; C&#43;&#43; 有用的网站 C&#43;&#43; Programming Language Tutorials − C&#43;&#43; 编程语言教程。 C&#43;&#43; Programming − 这本"/>
+<meta name="twitter:title" content="Qt Tips"/>
+<meta name="twitter:description" content="记录一下在学习Qt的过程中，一些浅薄的认识。 qmake 工程文件 扩展名 意义 备注 pro project 普通工程文件 pri project include 将pro中文件分成多个模块，或提取pro中共同的设"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -279,14 +280,14 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">收集一些有意思的资源</h1>
+      <h1 class="post-title">Qt Tips</h1>
       
       <div class="post-meta">
-        <time datetime="2019-10-09" class="post-time">
-          2019-10-09
+        <time datetime="2019-11-26" class="post-time">
+          2019-11-26
         </time>
         <div class="post-category">
-            <a href="http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/"> 杂七杂八 </a>
+            <a href="http://3gbywork.github.io/categories/%E9%9A%8F%E7%AC%94/"> 随笔 </a>
             
           </div>
         
@@ -306,70 +307,249 @@
     <div class="post-content">
       
 
-<h2 id="apache">Apache</h2>
+<p>记录一下在学习Qt的过程中，一些浅薄的认识。</p>
 
-<h3 id="log4net">log4net</h3>
+<h2 id="qmake">qmake</h2>
 
-<p>匿名 svn <code>$ svn checkout http://svn.apache.org/repos/asf/logging/log4net/trunk apache-log4net</code></p>
+<h3 id="工程文件">工程文件</h3>
 
-<p>1、components: loggers, appenders, layouts, filter, object renderers</p>
+<table>
+<thead>
+<tr>
+<th>扩展名</th>
+<th>意义</th>
+<th>备注</th>
+</tr>
+</thead>
 
-<p>Please note that ObjectRenderers are not used by the DebugFormat, InfoFormat, WarnFormat, ErrorFormat and FatalFormat methods.</p>
+<tbody>
+<tr>
+<td>pro</td>
+<td><strong>pro</strong>ject</td>
+<td>普通工程文件</td>
+</tr>
 
-<h2 id="c">C++</h2>
+<tr>
+<td>pri</td>
+<td><strong>pr</strong>oject <strong>i</strong>nclude</td>
+<td>将pro中文件分成多个模块，或提取pro中共同的设置</td>
+</tr>
 
-<h3 id="c-有用的网站">C++ 有用的网站</h3>
+<tr>
+<td>prf</td>
+<td><strong>pr</strong>oject <strong>f</strong>eature</td>
+<td>在Qt安装目录mkspecs下，如features/spec_post.prf</td>
+</tr>
+
+<tr>
+<td>prl</td>
+<td><strong>pr</strong>oject <strong>l</strong>ink</td>
+<td>在Qt安装目录lib下</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="变量-https-doc-qt-io-qt-5-qmake-variable-reference-html"><a href="https://doc.qt.io/qt-5/qmake-variable-reference.html">变量</a></h3>
+
+<table>
+<thead>
+<tr>
+<th>常用指令</th>
+<th>值</th>
+<th>备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>CONFIG</td>
+<td>release/debug<br>ordered<br>c++11<br>qt<br>windows<br>console<br>shared/dll<br>app_bundle</td>
+<td>* Build mode, if both are specified, the last one takes effect.<br>* Specify build order when using the subdirs template.<br>* C11 support is enabled.<br>* The target is a Qt application or library and requires the Qt library and header files.<br>* The target is a Win32 window application (app only).<br>* The target is a Win32 console application (app only). For a cross-platform command line application, use cmdline.<br>* The target is a shared object/DLL.<br>* Puts the executable into a bundle (this is the default).</td>
+</tr>
+
+<tr>
+<td>DEFINES</td>
+<td>-</td>
+<td>qmake adds the values of this variable as compiler C preprocessor macros (-D option).</td>
+</tr>
+
+<tr>
+<td>DESTDIR</td>
+<td>-</td>
+<td>Specifies where to put the target file.</td>
+</tr>
+
+<tr>
+<td>HEADERS</td>
+<td>-</td>
+<td>Defines the header files for the project.</td>
+</tr>
+
+<tr>
+<td>RC_ICONS</td>
+<td>myappico.ico</td>
+<td>Setting the Application Icon on Windows</td>
+</tr>
+
+<tr>
+<td>RC_FILE</td>
+<td>myapp.rc</td>
+<td>Setting the Application Icon on Windows<br>myapp.rc content:IDI_ICON1 ICON DISCARDABLE &ldquo;myappico.ico&rdquo;</td>
+</tr>
+
+<tr>
+<td>ICON</td>
+<td>myapp.icns</td>
+<td>Setting the Application Icon on macOS</td>
+</tr>
+
+<tr>
+<td>INCLUDEPATH</td>
+<td>-</td>
+<td>Specifies the #include directories which should be searched when compiling the project.</td>
+</tr>
+
+<tr>
+<td>LIBS</td>
+<td>-</td>
+<td>Specifies a list of libraries to be linked into the project.</td>
+</tr>
+
+<tr>
+<td>QT</td>
+<td>-</td>
+<td>Specifies the <a href="https://doc.qt.io/qt-5/qtmodules.html">Qt modules</a> that are used by your project.</td>
+</tr>
+
+<tr>
+<td>SOURCES</td>
+<td>-</td>
+<td>Specifies the names of all source files in the project.</td>
+</tr>
+
+<tr>
+<td><a href="https://doc.qt.io/qt-5/qmake-variable-reference.html#subdirs">SUBDIRS</a></td>
+<td>-</td>
+<td>This variable, when used with the subdirs template specifies the names of all subdirectories or project files that contain parts of the project that need to be built.</td>
+</tr>
+
+<tr>
+<td>TARGET</td>
+<td>-</td>
+<td>Specifies the name of the target file. Contains the base name of the project file by default.</td>
+</tr>
+
+<tr>
+<td>TEMPLATE</td>
+<td><br>app<br>lib<br>subdirs<br>aux</td>
+<td>Specifies the name of the template to use when generating the project.<br>* Creates a Makefile for building applications (the default).<br>* Creates a Makefile for building libraries.<br>* Creates a Makefile for building targets in subdirectories.<br>* Creates a Makefile for not building anything. Use this if no compiler needs to be invoked to create the target; for instance, because your project is written in an interpreted language.</td>
+</tr>
+
+<tr>
+<td>QMAKE_POST_LINK</td>
+<td>-</td>
+<td>Specifies the command to execute after linking the TARGET together.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="函数">函数</h3>
+
+<h4 id="replace-functions-https-doc-qt-io-qt-5-qmake-function-reference-html"><a href="https://doc.qt.io/qt-5/qmake-function-reference.html">Replace Functions</a></h4>
+
+<p>qmake provides functions for processing the contents of variables during the configuration process. These functions are called replace functions. Typically, they return values that you can assign to other variables. You can obtain these values by prefixing a function with the $$ operator. Replace functions can be divided into built-in functions and function libraries.</p>
+
+<table>
+<thead>
+<tr>
+<th>常用函数</th>
+<th>备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>shell_path(path)</td>
+<td>转换path中目录分隔符以兼容当前shell，如在windows上，将&rsquo;/&lsquo;转为&rsquo;\&rsquo;</td>
+</tr>
+
+<tr>
+<td>shell_quote(arg)</td>
+<td>用&rdquo;&ldquo;将arg包含起来以兼容当前shell，在windows上，如果arg中包含空格，则有&rdquo;&ldquo;,否则没有</td>
+</tr>
+
+<tr>
+<td>escape_expand(arg1 [, arg2 &hellip;, argn])</td>
+<td>扩展转义序列，如将&rsquo;\r&rsquo;转为&rsquo;\r&rsquo;</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="test-functions-https-doc-qt-io-qt-5-qmake-test-function-reference-html"><a href="https://doc.qt.io/qt-5/qmake-test-function-reference.html">Test Functions</a></h4>
+
+<p>Test functions return a boolean value that you can test for in the conditional parts of scopes. Test functions can be divided into built-in functions and function libraries.</p>
+
+<table>
+<thead>
+<tr>
+<th>常用函数</th>
+<th>备注</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>CONFIG(config)</td>
+<td>This function can be used to test for variables placed into the CONFIG variable.</td>
+</tr>
+
+<tr>
+<td>contains(variablename, value)</td>
+<td>Succeeds if the variable variablename contains the value value; otherwise fails.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="高级用法-https-doc-qt-io-qt-5-qmake-advanced-usage-html"><a href="https://doc.qt.io/qt-5/qmake-advanced-usage.html">高级用法</a></h3>
+
+<h4 id="adding-compilers">Adding Compilers</h4>
+
+<pre><code>new_moc.output  = moc_${QMAKE_FILE_BASE}.cpp
+new_moc.commands = moc ${QMAKE_FILE_NAME} -o ${QMAKE_FILE_OUT}
+new_moc.depend_command = g++ -E -M ${QMAKE_FILE_NAME} | sed &quot;s,^.*: ,,&quot;
+new_moc.input = NEW_HEADERS
+QMAKE_EXTRA_COMPILERS += new_moc
+</code></pre>
+
+<p>在实际使用中，需要注意input参数的值需要通过变量指定。测试直接指定不生效，不明原因。</p>
+
+<h3 id="undocumented-https-wiki-qt-io-undocumented-qmake"><a href="https://wiki.qt.io/Undocumented_QMake">undocumented</a></h3>
+
+<p>在spec_post.prf中定义的一些跨平台的变量，如：</p>
 
 <ul>
-<li><a href="http://www.cs.wustl.edu/~schmidt/C++/">C++ Programming Language Tutorials</a> − C++ 编程语言教程。</li>
-<li><a href="http://en.wikibooks.org/wiki/C++_Programming">C++ Programming</a> − 这本书涵盖了 C++ 语言编程、软件交互设计、C++ 语言的现实生活应用。</li>
-<li><a href="http://www.parashift.com/c++-faq-lite/index.html#table-of-contents">C++ FAQ</a> − C++ 常见问题</li>
-<li><a href="http://www.thefreecountry.com/sourcecode/cpp.shtml">Free Country</a> − Free Country 提供了免费的 C++ 源代码和 C++ 库，这些源代码和库涵盖了压缩、存档、游戏编程、标准模板库和 GUI 编程等 C++ 编程领域。</li>
-<li><a href="http://www.hal9k.com/cug/">C and C++ Users Group</a> − C 和 C++ 的用户团体提供了免费的涵盖各种编程领域 C++ 项目的源代码，包括 AI、动画、编译器、数据库、调试、加密、游戏、图形、GUI、语言工具、系统编程等。</li>
+<li>QMAKE_COPY</li>
+<li>QMAKE_COPY_DIR</li>
+<li>QMAKE_MOVE</li>
+<li>QMAKE_DEL_FILE</li>
+<li>QMAKE_DEL_DIR</li>
+<li>QMAKE_DEL_TREE</li>
+<li>QMAKE_CHK_EXISTS</li>
+<li>QMAKE_CHK_DIR_EXISTS</li>
+<li>QMAKE_MKDIR</li>
 </ul>
 
-<h3 id="c-有用的书籍">C++ 有用的书籍</h3>
+<blockquote>
+<p>Hope this all makes your jobs a little easier&hellip;!</p>
+</blockquote>
 
-<ul>
-<li>C++ Primer Plus</li>
-<li>C++ Primer</li>
-</ul>
+<h2 id="qt-i-nstaller-f-rame-w-ork-ifw-1"><a href="https://doc.qt.io/qtinstallerframework/index.html">Qt <strong>I</strong>nstaller <strong>F</strong>rame<strong>w</strong>ork (IFW)</a></h2>
 
-<h3 id="c-gui-库">C++ GUI 库</h3>
+<p>客户端程序的安装包制作工具有很多，在windows平台上有：<a href="https://nsis.sourceforge.io">NSIS</a>，<a href="http://www.jrsoftware.org/">Inno Setup</a>，在Unix平台上各种包管理器：apt-get、yum。为了降低发布跨平台应用的成本，以及提供跨平台一致性用户体验，Qt提供了IFW。</p>
 
-<ul>
-<li><a href="http://www.qt.io/">Qt</a></li>
-<li><a href="http://www.wxwidgets.org/">WxWidgets</a></li>
-</ul>
+<p>IFW可分为Online Installer和Offline Installer或者两者兼而有之。一般情况下，如果需要安装的组件少可以做成离线安装包，然后在config.xml中添加Repository Url以便通过maintenance tool添加、更新、移除组件；如果组件比较多且其中有些组件是用户可选安装的，则可以做成在线安装包，这样既可以减少安装包大小，又可以减少用户下载大小及安装时长。</p>
 
-<p><code>The quick brown fox jumps over the lazy dog.</code></p>
-
-<h2 id="google">Google</h2>
-
-<h3 id="google-chrome">Google Chrome</h3>
-
-<p><a href="https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B8AAABD56-04E1-8CF6-13F5-022D3F4DB175%7D%26lang%3Dzh-CN%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeStandaloneSetup64.exe">点此下载</a></p>
-
-<h2 id="html">HTML</h2>
-
-<h3 id="google-字体">Google 字体</h3>
-
-<p><code>&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lobster&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code>
-<a href="https://github.com/freecodecampchina/freecodecamp.cn/wiki/common-question">reference</a></p>
-
-<h3 id="所有浏览器都可用的字体">所有浏览器都可用的字体</h3>
-
-<p><code>Monospace</code>、<code>Serif</code>、<code>Sans-serif</code></p>
-
-<h2 id="word">WORD</h2>
-
-<h3 id="随机生成文字">随机生成文字</h3>
-
-<ul>
-<li><code>=rand()</code> 回车</li>
-<li><code>=lorem()</code></li>
-<li><code>=lorem(m,n)</code> m段，每段n句</li>
-</ul>
+<p>详细内容请参阅<a href="https://doc.qt.io/qtinstallerframework/index.html">官方手册</a>。</p>
 
     </div>
 
@@ -383,7 +563,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-10-09
+      2019-11-26
       
     </span>
   </p>
@@ -399,27 +579,17 @@
     
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="http://3gbywork.github.io/tags/qt/">Qt</a>
+          
+        </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/qt-tips/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Qt Tips</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/staticgen/">
-            <span class="next-text nav-default">静态站点生成器</span>
+          <a class="next" href="/post/resources/">
+            <span class="next-text nav-default">收集一些有意思的资源</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
