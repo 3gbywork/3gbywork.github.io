@@ -112,4 +112,33 @@ IFW可分为Online Installer和Offline Installer或者两者兼而有之。一�
 
 详细内容请参阅[官方手册][1]。
 
+## 调整Qt应用程序目录
+
+对于我们发布的Qt应用，通常是使用windeployqt抽取依赖的Qt库到应用程序根目录。这使得根目录变得“杂乱不堪”，而如果我们将Qt库放到单独文件夹则应用程序无法启动。
+
+在windows平台，可以通过添加Qt库到环境变量Path中解决上述问题；或者更激进的做法，把Qt库放到windows目录或者system32/SysWOW64目录下。
+
+当然，上述做法严重“污染”了系统的动态库“生态”。导致一系列不可预知的问题。
+
+解决问题的最根本最核心的依据就是[windows动态库搜索顺序][2]。下面介绍一种比较正常的解决方案：
+
+首先，我们需要一个启动程序，它用来设置当前进程的环境变量，将Qt库目录和其他Qt应用程序依赖的动态库目录设置到Path中，然后再通过CreateProcess启动Qt应用程序。注意lpEnvironment参数设置为空，这样子进程就会继承当前进程的环境变量。
+
+这时Qt应用仍然不能启动，我们需要一个神奇的配置文件。在Qt应用所在的目录创建一个qt.conf文件，其内容如下：
+
+```
+[Paths]
+Plugins = Path/To/Qt
+```
+
+经过上述两步，我们就可以通过启动程序来启动Qt应用了，看着变得干净清晰的目录，是不是很开心。
+
+另外再说明一点，上述正常的解决方案在使用了激进做法的机器上是不能启动的，当然如果依赖的Qt版本一致则无问题。
+
+遇到这种情况有两种解决方案：
+
+1. 将Qt库重新放回到应用程序根目录
+2. 要求客户将windows/system32/SysWOW64目录下的Qt库移除
+
 [1]: https://doc.qt.io/qtinstallerframework/index.html
+[2]: https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order#standard-search-order-for-desktop-applications
