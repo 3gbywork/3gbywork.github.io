@@ -71,7 +71,7 @@
 
 <meta itemprop="datePublished" content="2019-11-26T17:11:25&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-26T17:11:25&#43;08:00" />
-<meta itemprop="wordCount" content="1250">
+<meta itemprop="wordCount" content="1874">
 
 
 
@@ -550,6 +550,35 @@ QMAKE_EXTRA_COMPILERS += new_moc
 <p>IFW可分为Online Installer和Offline Installer或者两者兼而有之。一般情况下，如果需要安装的组件少可以做成离线安装包，然后在config.xml中添加Repository Url以便通过maintenance tool添加、更新、移除组件；如果组件比较多且其中有些组件是用户可选安装的，则可以做成在线安装包，这样既可以减少安装包大小，又可以减少用户下载大小及安装时长。</p>
 
 <p>详细内容请参阅<a href="https://doc.qt.io/qtinstallerframework/index.html">官方手册</a>。</p>
+
+<h2 id="调整qt应用程序目录">调整Qt应用程序目录</h2>
+
+<p>对于我们发布的Qt应用，通常是使用windeployqt抽取依赖的Qt库到应用程序根目录。这使得根目录变得“杂乱不堪”，而如果我们将Qt库放到单独文件夹则应用程序无法启动。</p>
+
+<p>在windows平台，可以通过添加Qt库到环境变量Path中解决上述问题；或者更激进的做法，把Qt库放到windows目录或者system32/SysWOW64目录下。</p>
+
+<p>当然，上述做法严重“污染”了系统的动态库“生态”。导致一系列不可预知的问题。</p>
+
+<p>解决问题的最根本最核心的依据就是<a href="https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order#standard-search-order-for-desktop-applications">windows动态库搜索顺序</a>。下面介绍一种比较正常的解决方案：</p>
+
+<p>首先，我们需要一个启动程序，它用来设置当前进程的环境变量，将Qt库目录和其他Qt应用程序依赖的动态库目录设置到Path中，然后再通过CreateProcess启动Qt应用程序。注意lpEnvironment参数设置为空，这样子进程就会继承当前进程的环境变量。</p>
+
+<p>这时Qt应用仍然不能启动，我们需要一个神奇的配置文件。在Qt应用所在的目录创建一个qt.conf文件，其内容如下：</p>
+
+<pre><code>[Paths]
+Plugins = Path/To/Qt
+</code></pre>
+
+<p>经过上述两步，我们就可以通过启动程序来启动Qt应用了，看着变得干净清晰的目录，是不是很开心。</p>
+
+<p>另外再说明一点，上述正常的解决方案在使用了激进做法的机器上是不能启动的，当然如果依赖的Qt版本一致则无问题。</p>
+
+<p>遇到这种情况有两种解决方案：</p>
+
+<ol>
+<li>将Qt库重新放回到应用程序根目录</li>
+<li>要求客户将windows/system32/SysWOW64目录下的Qt库移除</li>
+</ol>
 
     </div>
 
