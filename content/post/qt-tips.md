@@ -140,5 +140,71 @@ Plugins = Path/To/Qt
 1. 将Qt库重新放回到应用程序根目录
 2. 要求客户将windows/system32/SysWOW64目录下的Qt库移除
 
+## Qt编程
+
+### QMetaEnum
+
+像C#可以获取枚举名称、值、甚至枚举值的描述，对枚举进行遍历的操作。在Qt中，如果需要对枚举遍历时，枚举类型要满足以下要求：
+
+1. 枚举类型声明在类中
+2. 该类继承自QObject
+3. 该类使用宏Q_OBJECT
+4. 枚举通过Q_ENUM(YourEnumType)声明
+
+满足以上要求的枚举可以通过QMetaEnum::fromType<YourEnumType>()获取到QMetaEnum对象，该对象可以实现对枚举的遍历、枚举名称和值互查。
+
+### 隐藏类实现细节
+
+Qt源码中有大量的Private类和d_ptr及q_ptr，这就是Qt中隐藏类实现细节的一种编程模式。
+
+这种编程模式有如下好处：
+
+1. 类对外接口更清晰，即头文件更简洁，只需声明类对外提供的接口即可。
+2. 如果类的实现细节有更改，用户不必重新编译源程序，只需更新改动的类库即可。
+
+以下是示例代码：
+
+a.h
+
+```
+//前置声明
+class APrivate;
+class A
+{
+public:
+    A();
+
+private:
+    APrivate *d_ptr;
+    Q_DECLARE_PRIVATE(A)
+};
+```
+
+a.c
+
+```
+class APrivate
+{
+public:
+    APrivate(A *p) : q_ptr(p)
+    {
+
+    }
+
+private:
+    A *q_ptr;
+    Q_DECLARE_PUBLIC(A)
+};
+
+class A
+{
+public:
+    A() : d_ptr(new APrivate(this))
+    {
+
+    }
+};
+```
+
 [1]: https://doc.qt.io/qtinstallerframework/index.html
 [2]: https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order#standard-search-order-for-desktop-applications
