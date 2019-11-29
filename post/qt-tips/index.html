@@ -71,7 +71,7 @@
 
 <meta itemprop="datePublished" content="2019-11-26T17:11:25&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-26T17:11:25&#43;08:00" />
-<meta itemprop="wordCount" content="1874">
+<meta itemprop="wordCount" content="2265">
 
 
 
@@ -579,6 +579,74 @@ Plugins = Path/To/Qt
 <li>将Qt库重新放回到应用程序根目录</li>
 <li>要求客户将windows/system32/SysWOW64目录下的Qt库移除</li>
 </ol>
+
+<h2 id="qt编程">Qt编程</h2>
+
+<h3 id="qmetaenum">QMetaEnum</h3>
+
+<p>像C#可以获取枚举名称、值、甚至枚举值的描述，对枚举进行遍历的操作。在Qt中，如果需要对枚举遍历时，枚举类型要满足以下要求：</p>
+
+<ol>
+<li>枚举类型声明在类中</li>
+<li>该类继承自QObject</li>
+<li>该类使用宏Q_OBJECT</li>
+<li>枚举通过Q_ENUM(YourEnumType)声明</li>
+</ol>
+
+<p>满足以上要求的枚举可以通过QMetaEnum::fromType<YourEnumType>()获取到QMetaEnum对象，该对象可以实现对枚举的遍历、枚举名称和值互查。</p>
+
+<h3 id="隐藏类实现细节">隐藏类实现细节</h3>
+
+<p>Qt源码中有大量的Private类和d_ptr及q_ptr，这就是Qt中隐藏类实现细节的一种编程模式。</p>
+
+<p>这种编程模式有如下好处：</p>
+
+<ol>
+<li>类对外接口更清晰，即头文件更简洁，只需声明类对外提供的接口即可。</li>
+<li>如果类的实现细节有更改，用户不必重新编译源程序，只需更新改动的类库即可。</li>
+</ol>
+
+<p>以下是示例代码：</p>
+
+<p>a.h</p>
+
+<pre><code>//前置声明
+class APrivate;
+class A
+{
+public:
+    A();
+
+private:
+    APrivate *d_ptr;
+    Q_DECLARE_PRIVATE(A)
+};
+</code></pre>
+
+<p>a.c</p>
+
+<pre><code>class APrivate
+{
+public:
+    APrivate(A *p) : q_ptr(p)
+    {
+
+    }
+
+private:
+    A *q_ptr;
+    Q_DECLARE_PUBLIC(A)
+};
+
+class A
+{
+public:
+    A() : d_ptr(new APrivate(this))
+    {
+
+    }
+};
+</code></pre>
 
     </div>
 
