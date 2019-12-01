@@ -34,3 +34,15 @@ mathjax: false
 * CppSharp
 * SWIG (C/C++编写，为高级语言C#/JAVA/Python等提供C/C++接口)
 * C++/CLI封装纯C++库
+
+## C++和Python混合编程
+
+### C++调用Python
+
+* 嵌入Python解析器
+* Cython
+
+### Python调用C++
+
+* Cython
+* SWIG
