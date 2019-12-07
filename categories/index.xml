@@ -6,31 +6,12 @@
     <description>Recent content in Categories on 為學深知書之味  不勤何以業能成</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 26 Nov 2019 17:11:25 +0800</lastBuildDate>
     
 	<atom:link href="http://3gbywork.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>随笔</title>
-      <link>http://3gbywork.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Tue, 26 Nov 2019 17:11:25 +0800</pubDate>
-      
-      <guid>http://3gbywork.github.io/categories/%E9%9A%8F%E7%AC%94/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>杂七杂八</title>
-      <link>http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
-      <pubDate>Wed, 09 Oct 2019 10:26:07 +0800</pubDate>
-      
-      <guid>http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DOTNET</title>
+      <title>Dotnet</title>
       <link>http://3gbywork.github.io/categories/dotnet/</link>
       <pubDate>Sun, 04 Jun 2017 12:06:07 +0800</pubDate>
       
@@ -39,11 +20,20 @@
     </item>
     
     <item>
-      <title>HOWTO</title>
+      <title>Howto</title>
       <link>http://3gbywork.github.io/categories/howto/</link>
       <pubDate>Mon, 09 May 2016 19:24:34 +0800</pubDate>
       
       <guid>http://3gbywork.github.io/categories/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>http://3gbywork.github.io/categories/notes/</link>
+      <pubDate>Mon, 22 Feb 2016 15:44:51 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/categories/notes/</guid>
       <description></description>
     </item>
     
@@ -66,11 +56,20 @@
     </item>
     
     <item>
-      <title>notes</title>
-      <link>http://3gbywork.github.io/categories/notes/</link>
-      <pubDate>Mon, 22 Feb 2016 15:44:51 +0800</pubDate>
+      <title>杂七杂八</title>
+      <link>http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
+      <pubDate>Wed, 09 Oct 2019 10:26:07 +0800</pubDate>
       
-      <guid>http://3gbywork.github.io/categories/notes/</guid>
+      <guid>http://3gbywork.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>http://3gbywork.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sun, 22 Dec 2019 13:38:53 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/categories/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     
