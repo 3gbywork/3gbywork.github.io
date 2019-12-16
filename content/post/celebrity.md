@@ -3,7 +3,7 @@ title: "最近比较关注的明星"
 date: 2019-12-28T19:35:12+08:00
 lastmod: 2019-12-28T19:35:12+08:00
 draft: false
-keywords: []
+keywords: [胡歌,王晓晨]
 description: ""
 tags: []
 categories: [随笔]
@@ -29,6 +29,8 @@ mathjax: false
 经过一番了解，发现她也是一位真正的演员。3岁学习舞蹈，9岁学习京剧，擅长刀马旦，在校期间参演现代剧而开始演艺生涯。有趣的是，她和《爱情公寓》大部分主演是同学。和胡歌曾经合作过《射雕英雄传》但是没有对手戏，和黄磊合作《我爱男闺蜜》，因再次与胡歌合作《大好时光》走红。
 
 真的很欣赏她，附上王晓晨深情演唱的[《好久不见》][2]。
+
+我从他们身上看到了对一件事的“执着”和“热爱”。祝福他们。
 
 [1]: http://www.chinadaily.com.cn/interface/yidian/161776/2016-01-08/cd_22991085.html
 [2]: https://v.youku.com/v_show/id_XNDQ3OTMzMDM0NA==.html?spm=user.playlsit.page.98
