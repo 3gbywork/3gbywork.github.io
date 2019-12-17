@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 為學深知書之味  不勤何以業能成</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 26 Nov 2019 17:11:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2019 13:38:53 +0800</lastBuildDate>
     
 	<atom:link href="http://3gbywork.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>混合编程</title>
+      <link>http://3gbywork.github.io/post/mixed-programming/</link>
+      <pubDate>Sun, 22 Dec 2019 13:38:53 +0800</pubDate>
+      
+      <guid>http://3gbywork.github.io/post/mixed-programming/</guid>
+      <description>混合编程指使用两种或两种以上编程语言来设计应用程序的过程。 C++和C#混合编程 纯C++调用C#库 使用C++/CLI封装C#库供纯C++调用 C</description>
+    </item>
     
     <item>
       <title>Qt Tips</title>
