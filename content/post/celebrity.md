@@ -38,5 +38,9 @@ mathjax: false
 
 我从他们身上看到了对一件事的“执着”和“热爱”。祝福他们。
 
+## 素人
+
+刷了个综艺《我们恋爱吧》，欣赏陈强和聂墨仪。陈强的随性和墨墨的洒脱真的是很棒的CP。可惜，虽然他们很相似、有共同爱好，但是就是不来电。
+
 [1]: http://www.chinadaily.com.cn/interface/yidian/161776/2016-01-08/cd_22991085.html
 [2]: https://v.youku.com/v_show/id_XNDQ3OTMzMDM0NA==.html?spm=user.playlsit.page.98
