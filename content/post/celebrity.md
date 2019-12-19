@@ -42,5 +42,7 @@ mathjax: false
 
 刷了个综艺《我们恋爱吧》，欣赏陈强和聂墨仪。陈强的随性和墨墨的洒脱真的是很棒的CP。可惜，虽然他们很相似、有共同爱好，但是就是不来电。
 
+最近又刷到了相似的综艺《遇见你真好》，欣赏陈溥江、刘适时。6岁小孩和大叔一个真实一个温暖。喜欢一个人就只对他好，专一不暧昧，而且不过分表现自己。
+
 [1]: http://www.chinadaily.com.cn/interface/yidian/161776/2016-01-08/cd_22991085.html
 [2]: https://v.youku.com/v_show/id_XNDQ3OTMzMDM0NA==.html?spm=user.playlsit.page.98
