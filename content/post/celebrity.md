@@ -44,5 +44,11 @@ mathjax: false
 
 最近又刷到了相似的综艺《遇见你真好》，欣赏陈溥江、刘适时。6岁小孩和大叔一个真实一个温暖。喜欢一个人就只对他好，专一不暧昧，而且不过分表现自己。
 
+看到同龄人这么优秀，真的很羡慕，想起了一句话与君共勉：
+
+“你若盛开，蝴蝶自来，你若精彩，天自安排”。
+
+做一个优秀的人，等待优秀的那个人。
+
 [1]: http://www.chinadaily.com.cn/interface/yidian/161776/2016-01-08/cd_22991085.html
 [2]: https://v.youku.com/v_show/id_XNDQ3OTMzMDM0NA==.html?spm=user.playlsit.page.98
